@@ -1,0 +1,8 @@
+<p><%= @task.details %></p>
+<% if @task.completed == true %>
+  <p>Completed</p>
+<% else %>
+  <p>To do</p>
+<% end %>
+
+<p> <%= link_to "Edit the task", edit_task_path %> </p>
